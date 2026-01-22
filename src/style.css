@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*CSS reset code*/
+/*Fonts that are used in the project*/
+@font-face {
+    font-family: 'Roboto';
+    src: url(/src/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(/src/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+/*Fonts that are used in the project*/
+/*Basic body code*/
+body {
+   font-family: 'Roboto',sans-serif;
+   max-width: 1440px;
+   font-size: 1rem;
+   background-color: rgb(134, 21, 21);
+}
+/*Header code-title of page*/
+header h1{
+    font-size: 3rem;
+    font-family: 'OpenSans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: 40px;
+    color: rgb(255, 130, 0);
+    font-weight: bold;
+}
+/**Navigation bar code-buttons*/
+nav{
+    margin-top: 30px;
+}
+/*Code for the buttons-design*/
+ header button{
+   height: 60px;
+   width: 100px;
+   border-radius: 10px;
+   background-color: rgb(255, 128, 128);
+   font-weight: 600;
+   color: rgb(53, 53, 53);
+   font-weight: bold;
+   border: solid 3px rgb(150, 0, 51);
+}
+#Home-btn{
+    margin-left: 550px;
+}
+#About-btn{
+    margin-left: 60px;
+}
+#Menu-btn{
+    margin-left: 60px;
+}
+header button:hover{
+    background-color: rgb(255, 87, 87);
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border:solid 3px rgb(134, 21, 21);
+}
+/*Hover effect for the buttons*/
+/**Navigation bar code-buttons*/
+/*History title code*/
+.history-title {
+  background-color: #333;  
+  font-size: 2rem;  
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+/*History text code*/
+.history-text {
+  background-color: #666;  
+  font-size: 1.2rem;
+  border-radius: 2px;  
+}
+/*Location title code*/
+.location-text{
+  font-weight: bold;
+}
